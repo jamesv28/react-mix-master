@@ -18,7 +18,7 @@ const ErrorView = () => {
   }
   return (
     <Wrapper>
-      <img src={img} />
+      <h2>Something went wrong</h2>
     </Wrapper>
   );
 };

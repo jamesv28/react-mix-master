@@ -4,3 +4,4 @@ export { default as CocktailView } from "./CocktailView";
 export { default as NewsletterView } from "./NewsletterView";
 export { default as ErrorView } from "./ErrorView";
 export { default as HomeLayout } from "./HomeLayout";
+export { default as SingleError } from "./SingleError";

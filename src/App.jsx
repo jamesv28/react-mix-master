@@ -7,8 +7,10 @@ import {
   CocktailView,
   LandingView,
   NewsletterView,
+  SingleError,
 } from "./pages";
 
+import { loader as initialLoader } from "./pages/LandingView";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -18,6 +20,8 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <LandingView />,
+        loader: initialLoader,
+        errorElement: <SingleError />,
       },
       {
         path: "landing",
