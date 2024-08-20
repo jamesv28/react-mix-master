@@ -32,7 +32,7 @@ const router = createBrowserRouter([
         element: <NewsletterView />,
       },
       {
-        path: "cocktail",
+        path: "cocktail/:id",
         element: <CocktailView />,
       },
       {
