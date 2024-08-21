@@ -30,7 +30,6 @@ const CocktailView = () => {
     .filter((key) => key.startsWith("strIngredient") && drink[key] !== null)
     .map((key) => drink[key]);
 
-  console.log("ingredients", validIngredients);
   return (
     <Wrapper>
       <header>
