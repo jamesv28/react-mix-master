@@ -11,6 +11,7 @@ import {
 } from "./pages";
 
 import { loader as initialLoader } from "./pages/LandingView";
+import { loader as cocktailLoader } from "./pages/CocktailView";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -34,6 +35,8 @@ const router = createBrowserRouter([
       {
         path: "cocktail/:id",
         element: <CocktailView />,
+        errorElement: <SingleError />,
+        loader: cocktailLoader,
       },
       {
         path: "about",
