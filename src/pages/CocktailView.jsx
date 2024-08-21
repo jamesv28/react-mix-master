@@ -13,8 +13,18 @@ export const loader = async ({ params }) => {
 };
 const CocktailView = () => {
   const { id, data } = useLoaderData();
+
+  if (!data) {
+    return (
+      <Wrapper>
+        <Link to="/" className="btn">
+          Back home
+        </Link>
+        <h2>Something went wrong...</h2>
+      </Wrapper>
+    );
+  }
   const drink = data.drinks[0];
-  console.log("drink", drink);
 
   const {
     strDrink: name,
